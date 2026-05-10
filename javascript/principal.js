@@ -1,4 +1,5 @@
 import { obtenerDatosCovid } from './datos.js';
+import { pintarEnPantalla } from './interfaz.js';
 
 let listaPaisesBase = [];
 
@@ -8,4 +9,13 @@ obtenerDatosCovid().then(data => {
         listaPaisesBase = data; 
         console.log(listaPaisesBase);
     }
-});
+})
+obtenerDatosCovid()
+
+    .then(data => {
+        if (data) {
+            
+            pintarEnPantalla(data);
+        }
+        
+    }); 
