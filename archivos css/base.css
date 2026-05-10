@@ -23,23 +23,24 @@ body {
     padding: var(--espaciado-header) 20px;
     width: 100%;
 }
+#idEntradaBusqueda {
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    box-shadow: var(--sombra-suave);
+    font-size: 1rem;
+    width: 250px;    
+    max-width: 60%;   
+}
+
 .navegacion {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 15px;
+    gap: 10px;
     margin-top: 20px;
-}
-
-#idEntradaBusqueda {
-    padding: 12px 25px;
-    border-radius: 25px;
-    border: none;
-    width: 100%;
-    max-width: 400px;
-    outline: none;
-    box-shadow: var(--sombra-suave);
-    font-size: 1rem;
+    width: 100%;      
 }
 .carta-paises {
     display: flex;       
