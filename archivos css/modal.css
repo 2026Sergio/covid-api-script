@@ -1,0 +1,27 @@
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 2000;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.contenido-modal {
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    color: #333;
+}
+
+.cerrar {
+    position: absolute;
+    right: 15px; top: 5px;
+    font-size: 30px;
+    cursor: pointer;
+}
