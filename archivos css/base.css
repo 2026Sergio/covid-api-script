@@ -5,11 +5,14 @@
     --color-blanco: #ffffff;
     --sombra-suave: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
 body {
     margin: 0;
     padding: 0;
     background-color: #f0f2f5; 
+    font-family: sans-serif;
 }
+
 .contenedor-principal {
     background: var(--gradiente-azul);
     color: var(--color-texto);
@@ -20,10 +23,6 @@ body {
     padding: var(--espaciado-header) 20px;
     width: 100%;
 }
-h1, p {
-    margin: 0;
-    padding: 10px 0;
-}
 .navegacion {
     display: flex;
     justify-content: center;
@@ -31,80 +30,69 @@ h1, p {
     gap: 15px;
     margin-top: 20px;
 }
+
 #idEntradaBusqueda {
-    padding: 12px 25px;        
-    border-radius: 25px;       
-    border: none;            
-    width: 100%;            
-    max-width: 400px;        
-    outline: none;             
-    box-shadow: var(--sombra-suave); 
-    font-size: 1rem;          
-}
-.cartas {
-    max-width: 1200px;         
-    margin: 40px auto;        
-    padding: 0 20px;           
-}
-#idContenedorResultados {
-    display: grid;           
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
-    gap: 20px;                
-}
-footer {
-    text-align: center;
-    padding: 30px;
-    background-color: var(--color-blanco); 
-    margin-top: 50px;         
+    padding: 12px 25px;
+    border-radius: 25px;
+    border: none;
+    width: 100%;
+    max-width: 400px;
+    outline: none;
+    box-shadow: var(--sombra-suave);
+    font-size: 1rem;
 }
 .carta-paises {
-    display: flex;        
-    flex-wrap: wrap;       
-    justify-content: center;
-    gap: 45px;              
-    padding: 30px;         
+    display: flex;       
+    flex-wrap: wrap;         
+    justify-content: center; 
+    gap: 45px;             
+    padding: 30px;
+    max-width: 1200px;   
+    margin: 0 auto;         
 }
-
 .tarjeta-pais {
-    width: 260px;        
+    width: 260px;           
     background: #ffffff;
-    border: 1px solid #ddd; 
-    border-radius: 12px;  
-    overflow: hidden;  
-    transition: 0.3s;      
-    cursor: pointer;      
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
-    
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.3s;
+    cursor: pointer;
+    box-shadow: var(--sombra-suave);
     display: flex;
     flex-direction: column;
-    align-items: center;   
+    align-items: center;
 }
 .tarjeta-pais:hover {
     transform: translateY(-12px); 
     box-shadow: 0 15px 30px rgba(0,0,0,0.2);
 }
 .bandera-contenedor {
-    width: 100%;       
-    height: 150px;     
+    width: 100%;
+    height: 150px;
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     align-items: center;
-    background: #fcfcfc;  
+    background: #fcfcfc;
 }
+
 .bandera-contenedor img {
-    max-width: 95%;  
-    max-height: 90%;    
-    object-fit: contain; 
+    max-width: 95%;
+    max-height: 90%;
+    object-fit: contain;    
 }
-
 .info-pais {
-    padding: 20px;  
-    text-align: center;  
+    padding: 20px;
+    text-align: center;
 }
-
 .info-pais h3 {
-    margin: 0;
+    margin: 0 0 15px 0;
     font-size: 1.3rem;
-    color: #333;           
-    font-family: sans-serif;
+    color: #333;
+}
+footer {
+    text-align: center;
+    padding: 30px;
+    background-color: var(--color-blanco);
+    margin-top: 50px;
 }
