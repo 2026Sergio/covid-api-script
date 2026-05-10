@@ -1,0 +1,21 @@
+@keyframes pulso {
+    0%, 100% { 
+        transform: scale(1); 
+        filter: drop-shadow(0 0 5px rgba(255,255,255,0.3)); 
+    }
+    50% { 
+        transform: scale(1.15); 
+        filter: drop-shadow(0 0 20px var(--brillo)) brightness(1.2); 
+    }
+}
+.navegacion img {
+    display: inline-block; 
+    animation: pulso 3s ease-in-out infinite; 
+}
+img[alt="manos"] { 
+    --brillo: rgba(0, 191, 255, 0.8); 
+}
+img[alt="covid"] { 
+    --brillo: rgba(255, 65, 0, 0.9); 
+    animation-delay: 1.5s; 
+}
