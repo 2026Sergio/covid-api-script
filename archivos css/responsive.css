@@ -1,0 +1,46 @@
+@media (max-width: 768px) {
+    .navegacion {
+        display: flex !important;
+        flex-direction: row !important; 
+        gap: 8px;                      
+        padding: 0 10px;               
+        justify-content: center;      
+        width: 100%;
+    }
+    .navegacion img {
+        width: 35px;     
+        flex-shrink: 0;  
+    }
+    #idEntradaBusqueda {
+        width: 70%;        
+        font-size: 0.9rem; 
+        padding: 10px 15px;
+    }
+    .contenedor-principal {
+        padding: 20px 10px; 
+    }
+    .contenedor-principal h1 {
+        font-size: 1.4rem; 
+    }
+    .carta-paises {
+        gap: 25px;        
+        padding: 15px;    
+        justify-content: center !important; 
+    }
+    .tarjeta-pais {
+        width: 280px;      
+        margin: 0 auto;  
+    }
+}
+@media (max-width: 400px) {
+    .navegacion img {
+        width: 25px;
+    }
+    .tarjeta-pais {
+        width: 100%;      
+        max-width: 280px;  
+    }
+    .bandera-contenedor {
+        height: 130px;
+    }
+}

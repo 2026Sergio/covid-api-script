@@ -17,5 +17,4 @@ obtenerDatosCovid()
             
             pintarEnPantalla(data);
         }
-        
-    }); 
+    });
