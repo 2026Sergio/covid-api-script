@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API casos de covid</title>
+    <link rel="stylesheet" href="./archivos css/animacion.css">
+    <link rel="stylesheet" href="./archivos css/base.css">
+    <link rel="stylesheet" href="./archivos css/modal.css">
+    <link rel="stylesheet" href="./archivos css/responsive.css">
+</head>
+<body>
+    <header class="contenedor-principal">
+        <h1>Casos de COVID-19</h1>
+        <p>Casos del COVID-19 alrededor del mundo</p>
+        <nav class="navegacion">
+            <img src="./imagenes/manos.png" alt="manos" width="50">
+            <div id="idBarraNavegacion" class="barra-navegacion"></div>
+            <input type="text" id="idEntradaBusqueda" placeholder="Buscar país..." autocomplete="off">
+            
+            <img src="./imagenes/covid.png" alt="covid" width="50">
+        </nav>
+    </header>
+    <main class="cartas">
+        <div id="idContenedorResultados" class="carta-paises">
+            Cargando países...
+        </div>
+    </main>
+    <footer>
+        <p>&copy; Todos los derechos reservados. | Sergio Miranda</p>
+    </footer>
+
+    <script type="module" src="./javascript/principal.js"></script>
+</body>
+</html>
