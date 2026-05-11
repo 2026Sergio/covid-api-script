@@ -12,5 +12,9 @@ export async function abrirDetalleLento(pais) {
         <h2>${pais.country}</h2>
         <p>Casos: ${pais.cases.toLocaleString()}</p>
         <p>Muertes: ${pais.deaths.toLocaleString()}</p>
+        <p>Recuperados: ${pais.recovered.toLocaleString()}</p>
+        <p>Activos: ${pais.active.toLocaleString()}</p>
+        <p>Población: ${pais.population.toLocaleString()}</p>
+        <p>Continente: ${pais.continent}</p>
     `;
 }
