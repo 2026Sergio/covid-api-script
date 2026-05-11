@@ -1,3 +1,4 @@
+// Este archivo es el punto de entrada principal de la aplicación. Maneja la inicialización, eventos de búsqueda y cierre del modal.
 import { obtenerDatosCovid } from './datos.js';
 import { pintarEnPantalla } from './interfaz.js';
 import { buscarPais } from './buscador.js';
@@ -11,7 +12,7 @@ const btnCerrar = document.getElementById("idCerrarModal");
 obtenerDatosCovid().then(data => {
     if (data) {
         listaPaisesBase = data; 
-        console.log("datos de la api:", listaPaisesBase); 
+        console.log("datos de la api:", listaPaisesBase)
         pintarEnPantalla(data, abrirDetalleLento);
     }
 });
@@ -24,7 +25,6 @@ inputBusqueda.addEventListener('input', (e) => {
 btnCerrar.onclick = () => {
     modal.style.display = "none";
 };
-
 window.onclick = (e) => {
     if (e.target == modal) {
         modal.style.display = "none";

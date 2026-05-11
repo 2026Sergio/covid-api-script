@@ -1,3 +1,4 @@
+// Este archivo contiene funciones lógicas adicionales, como abrir el detalle de un país con información completa.
 export async function abrirDetalleLento(pais) {
     const modal = document.getElementById("idModal");
     const detalle = document.getElementById("idDetallePais");
@@ -13,7 +14,6 @@ export async function abrirDetalleLento(pais) {
         <p>Casos: ${pais.cases.toLocaleString()}</p>
         <p>Muertes: ${pais.deaths.toLocaleString()}</p>
         <p>Recuperados: ${pais.recovered.toLocaleString()}</p>
-        <p>Activos: ${pais.active.toLocaleString()}</p>
         <p>Población: ${pais.population.toLocaleString()}</p>
         <p>Continente: ${pais.continent}</p>
     `;

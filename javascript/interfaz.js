@@ -1,19 +1,4 @@
-export async function abrirDetalleLento(pais) {
-    const modal = document.getElementById("idModal");
-    const detalle = document.getElementById("idDetallePais");
-
-    modal.style.display = "block";
-    detalle.innerHTML = "<h3>Cargando información...</h3>";
-    await new Promise(res => setTimeout(res, 2000));
-
-    detalle.innerHTML = `
-        <img src="${pais.countryInfo.flag}" width="120">
-        <h2>${pais.country}</h2>
-        <p>Casos: ${pais.cases.toLocaleString()}</p>
-        <p>Muertes: ${pais.deaths.toLocaleString()}</p>
-    `;
-}
-
+// Este archivo maneja la interfaz de usuario: pinta las tarjetas de países en pantalla y abre el modal con detalles básicos.
 export function pintarEnPantalla(lista, abrirDetalleLento) {
     const contenedor = document.getElementById("idContenedorResultados");
     let htmlFinal = "";
