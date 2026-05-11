@@ -11,7 +11,7 @@ const btnCerrar = document.getElementById("idCerrarModal");
 obtenerDatosCovid().then(data => {
     if (data) {
         listaPaisesBase = data; 
-        console.log("Datos cargados:", listaPaisesBase); 
+        console.log("datos de la api:", listaPaisesBase); 
         pintarEnPantalla(data, abrirDetalleLento);
     }
 });
